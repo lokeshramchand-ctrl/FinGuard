@@ -1,0 +1,14 @@
+Colors Used For the App
+
+
+
+Green
+
+Color(0xFF00221F)
+
+
+
+
+Yellow 
+
+Color(0xFFFABF02)
