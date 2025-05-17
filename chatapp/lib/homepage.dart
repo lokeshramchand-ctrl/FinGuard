@@ -6,8 +6,6 @@ class DashboardPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-
     return Scaffold(
       backgroundColor: const Color(0xFF00221F),
       body: SafeArea(
@@ -16,7 +14,6 @@ class DashboardPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Top Greeting and Avatar
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -141,8 +138,10 @@ class DashboardPage extends StatelessWidget {
         selectedItemColor: const Color(0xFFFABF02),
         unselectedItemColor: Colors.white70,
         showUnselectedLabels: true,
-        selectedLabelStyle: GoogleFonts.inter(fontWeight: FontWeight.w600),
-        unselectedLabelStyle: GoogleFonts.inter(),
+        selectedLabelStyle: GoogleFonts.playfairDisplay(
+          fontWeight: FontWeight.w600,
+        ),
+        unselectedLabelStyle: GoogleFonts.playfairDisplay(),
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.dashboard), label: 'Home'),
           BottomNavigationBarItem(
